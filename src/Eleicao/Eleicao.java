@@ -1,4 +1,4 @@
-//package sef.module3.activity;
+package Eleicao;
 
 import java.util.Scanner;
 
@@ -18,7 +18,7 @@ public class Eleicao {
 
             voto = scanner.nextInt();
 
-            // Atividade 3.1: Refatoração de Switch para IF
+
             if (voto == 0) {
                 System.out.println("Processando resultados...\n");
             }
@@ -27,7 +27,7 @@ public class Eleicao {
             }
             else if (voto == 2) {
                 contadorB++;
-                // Mantendo a lógica de anulação a cada 3 votos
+
                 if (contadorB % 3 != 0) {
                     candidatoB++;
                 } else {
@@ -39,7 +39,7 @@ public class Eleicao {
                 brancos++;
             }
             else {
-                // Equivalente ao 'default' do switch
+
                 nulos++;
                 System.out.println("Voto computado como NULO.");
             }
@@ -57,7 +57,7 @@ public class Eleicao {
         scanner.close();
     }
 
-    // Criatividade e Eficiência: Método auxiliar para não poluir o main
+
     private static void exibirResultados(int total, int a, int b, int br, int nu) {
         System.out.println("---------- RESULTADO FINAL ----------");
         System.out.printf("Total de Votos: %d\n", total);

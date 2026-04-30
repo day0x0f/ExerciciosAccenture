@@ -1,3 +1,5 @@
+package Calculator;
+
 import java.util.Scanner;
 
 public class Calculator {
@@ -8,7 +10,7 @@ public class Calculator {
 
         System.out.println("=== CALCULADORA ===");
 
-        // Loop de validação da opção
+
         while (!opcaoValida) {
             System.out.println("\n1. Somar (+)");
             System.out.println("2. Subtrair (-)");
@@ -16,11 +18,11 @@ public class Calculator {
             System.out.println("4. Dividir (/)");
             System.out.print("Escolha uma operação (1-4): ");
 
-            // Verifica se a entrada é um número para evitar erro de sistema
+
             if (leitor.hasNextInt()) {
                 opcao = leitor.nextInt();
 
-                // Verifica se o número está no intervalo de 1 a 4
+
                 if (opcao >= 1 && opcao <= 4) {
                     opcaoValida = true;
                 } else {
@@ -28,11 +30,11 @@ public class Calculator {
                 }
             } else {
                 System.out.println(">> Erro: Por favor, digite apenas números.");
-                leitor.next(); // Limpa a entrada inválida para não travar o loop
+                leitor.next();
             }
         }
 
-        // Se chegou aqui, a opção é garantidamente válida
+
         System.out.print("Digite o primeiro número: ");
         double n1 = leitor.nextDouble();
         System.out.print("Digite o segundo número: ");

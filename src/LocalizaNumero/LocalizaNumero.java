@@ -1,3 +1,5 @@
+package LocalizaNumero;
+
 import java.util.Scanner;
 
 public class LocalizaNumero {
