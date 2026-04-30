@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Eleicao {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int candidatoA = 0, candidatoB = 0, brancos = 0, nulos = 0, totalVotos = 0, contadorB = 0;
+        int candidatoA = 0, candidatoB = 0, brancos = 0, nulos = 0, totalVotos, contadorB = 0;
         int voto;
 
         do {
